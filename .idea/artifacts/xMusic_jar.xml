@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="xMusic:jar">
+    <output-path>$USER_HOME$/Desktop</output-path>
+    <root id="archive" name="xMusic.jar">
+      <element id="module-output" name="xMusic" />
+    </root>
+  </artifact>
+</component>

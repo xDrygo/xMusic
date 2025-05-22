@@ -1,0 +1,4 @@
+settings:
+  global_delay_seconds: 2
+  music_card_enabled: true
+  sound_category: AMBIENT

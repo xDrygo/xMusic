@@ -1,0 +1,59 @@
+prefix: "#ba5bff&lx&r&f&lMusic &r&8»"
+music_card:
+  - " "
+  - "&r  #ba5bff🎵 &r#e3beffCurrently Listening to..."
+  - "&r    #fffad4%name% #fff18dby #fffad4%author%"
+  - " "
+command:
+  play:
+    usage: "%prefix% #FF0000🚫 Incorrect Usage. &7Usage: &f/xmusic play <song/playlist> <key> <player / *>"
+    player_invalid: "%prefix% #FF0000🚫 Can't find player %target%."
+    not_found: "%prefix% #FF0000🚫 Can't find %key% %type%."
+    type_invalid: "%prefix% #FF0000🚫 Invalid type. &7Types: &fsong&7, &fplaylist"
+    self: "%prefix% #a0ff72✔ Now playing %song%."
+    success_all: "%prefix% #a0ff72✔ Now playing %song% for everyone"
+    target: "%prefix% #a0ff72✔ Now playing %song% to %target%."
+  stop:
+    usage: "%prefix% #FF0000🚫 Incorrect Usage. &7Usage: &f/xmusic stop <song/playlist> <player / *> [finish]"
+    player_invalid: "%prefix% #FF0000🚫 Can't find player %target%."
+    type_invalid: "%prefix% #FF0000🚫 Invalid type. &7Types: &fsong&7, &fplaylist"
+    song: "%prefix% #a0ff72✔ Stopped the song for %target%"
+    playlist: "%prefix% #a0ff72✔ Stopped playlist for %target%"
+    playlist_finish: "%prefix% #a0ff72✔ The %target%'s playlist will stop after the song ends."
+  skip:
+    usage: "%prefix% #FF0000🚫 Incorrect Usage. &7Usage: &f/xmusic skip <player/*>"
+    player_invalid: "%prefix% #FF0000🚫 Can't find player %target%."
+    success: "%prefix% #a0ff72✔ Skipped song for %target%"
+    fail: "%prefix% #FF0000🚫 Failed on stopping song for %target%"
+    summary: "%prefix% #a0ff72✔ Skipped song for %success% players. #ff7272❌ Failed for %fail% players."
+  reload:
+    success: "%prefix% #a0ff72✔ Plugin reloaded."
+    error: "%prefix% #FF0000🚫 Failed on plugin reloading."
+  help:
+    - " "
+    - " "
+    - "                            #ba5bff&lx&r&f&lMusic &8» &r&fHelp"
+    - " "
+    - "#fff18d&l                    ᴘʟᴜɢɪɴ ᴄᴏᴍᴍᴀɴᴅꜱ"
+    - "&f  /xmusic ᴘʟᴀʏ <song|playlist> <key> [player/*] #707070» #ccccccPlay a song or playlist to player(s)"
+    - "&f  /xmusic sᴛᴏᴘ <song|playlist> <player/*> [finish] #707070» #ccccccStop playing music for player(s)"
+    - "&f  /xmusic sᴋɪᴘ <player/*> #707070» #ccccccSkip the current song for player(s)"
+    - "&f  /xmusic ʀᴇʟᴏᴀᴅ #707070» #ccccccReload the plugin configuration"
+    - " "
+    - "#fff18d&l                 ᴘʟᴀʏ ᴄᴏᴍᴍᴀɴᴅ ᴅᴇᴛᴀɪʟs"
+    - "&f  /xmusic ᴘʟᴀʏ song <key> [player/*] #707070» #ccccccPlay a specific song"
+    - "&f  /xmusic ᴘʟᴀʏ playlist <key> [player|*] #707070» #ccccccPlay a playlist"
+    - " "
+    - "#fff18d&l                ᴍᴀɴᴀɢᴇ ᴍᴜsɪᴄ ᴘʟᴀʏʙᴀᴄᴋ"
+    - "&f  /xmusic sᴛᴏᴘ song <player/*> [finish] #707070» #ccccccStop a song; 'finish' plays the song till the end"
+    - "&f  /xmusic sᴛᴏᴘ playlist <player/*> [finish] #707070» #ccccccStop a playlist; 'finish' finishes current song before stopping"
+    - "&f  /xmusic sᴋɪᴘ <player/*> #707070» #ccccccSkip the current song for the player(s)"
+    - " "
+    - " "
+
+error:
+  no_permission: "%prefix% #FF0000🚫 Don't have permission for using %command%"
+  unknown_command: "%prefix% #FF0000🚫 Unknown Command. &7Use &f/xmusic help &7to get command list."
+
+
+# #FF0000🚫 #ff7272❌ #fff18d📰 #a0ff72✔

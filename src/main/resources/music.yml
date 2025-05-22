@@ -1,0 +1,35 @@
+musics:
+  good_night:
+    sound: "custom.goodnight"
+    volume: 1.0
+    pitch: 1.0
+    data:
+      name: "Party Fest OST - Good Night"
+      author: "Drygo"
+      duration: 96 #In seconds
+  mazer:
+    sound: "custom.mazer"
+    volume: 1.0
+    pitch: 1.0
+    data:
+      name: "Party Fest OST - Mazer"
+      author: "Drygo"
+      duration: 340 #In seconds
+  im_tired:
+    sound: "custom.im_tired"
+    volume: 1.0
+    pitch: 1.0
+    data:
+      name: "Party Fest OST - I'm Tired"
+      author: "Drygo"
+      duration: 133 #In seconds
+playlists:
+  orden:
+    sounds: [im_tired, good_night, mazer]
+    shuffle: false
+  desordenado:
+    sounds: [mazer, good_night, im_tired]
+    shuffle: false
+  shuffle:
+    sounds: [im_tired, good_night, mazer]
+    shuffle: false
