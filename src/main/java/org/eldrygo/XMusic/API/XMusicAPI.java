@@ -3,26 +3,26 @@ package org.eldrygo.XMusic.API;
 import org.bukkit.SoundCategory;
 import org.bukkit.entity.Player;
 import org.eldrygo.XMusic.Managers.MusicManager;
-import org.eldrygo.XMusic.Managers.MusicManager.SoundData;
-import org.eldrygo.XMusic.Managers.MusicManager.Playlist;
+import org.eldrygo.XMusic.Models.Playlist;
+import org.eldrygo.XMusic.Models.SoundData;
 
+import java.util.Collection;
 import java.util.Set;
 
 public class XMusicAPI {
 
     private static MusicManager musicManager;
 
-    // Llamado por el plugin principal en su onEnable
     public static void init(MusicManager manager) {
         musicManager = manager;
     }
 
-    public static void playSongWithPluginSoundCategory(Player player, String key) {
-        musicManager.play(player, key);
-    }
-
     public static void playSong(Player player, String key, SoundCategory category) {
-        musicManager.play(player, key, category);
+        if (category == null) {
+            musicManager.play(player, key);
+        } else {
+            musicManager.play(player, key, category);
+        }
     }
 
     public static void stopSong(Player player, String key) {
@@ -33,8 +33,12 @@ public class XMusicAPI {
         musicManager.stopCurrentSong(player);
     }
 
-    public static void playPlaylist(Player player, String playlistKey) {
-        musicManager.playPlaylist(player, playlistKey);
+    public static void playPlaylist(Collection<? extends Player> players, String playlistKey, SoundCategory category) {
+        if (category == null) {
+            musicManager.playPlaylist(players, playlistKey);
+        } else {
+            musicManager.playPlaylist(players, playlistKey, category);
+        }
     }
 
     public static void stopPlaylist(Player player) {

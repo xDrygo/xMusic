@@ -149,15 +149,12 @@ public class XMusicCommand implements CommandExecutor {
                         .replace("%type%", "playlist").replace("%key%", key));
                 return true;
             }
-            for (Player player : targets) {
-                musicManager.playPlaylist(player, key);
-            }
+            musicManager.playPlaylist(targets, key);
         } else {
             sender.sendMessage(chatUtils.getMessage("command.play.type_invalid", null));
             return true;
         }
 
-        // Envío de mensaje al final
         if (isBroadcast) {
             sender.sendMessage(chatUtils.getMessage("command.play.success_all", null)
                     .replace("%song%", key));
