@@ -79,7 +79,7 @@
   <dependency>
     <groupId>com.github.xDrygo</groupId>
     <artifactId>xMusic</artifactId>
-    <version>0.0.11</version>
+    <version>0.0.13</version>
     <scope>provided</scope>
   </dependency>
 </dependencies>
@@ -102,7 +102,7 @@ dependencyResolutionManagement {
 }
 
 dependencies {
-  implementation 'com.github.xDrygo:xMusic:0.0.11'
+  implementation 'com.github.xDrygo:xMusic:0.0.13'
 }
 ```
 ### Add Gradle dependency (settings.gradle.kts)
@@ -116,7 +116,7 @@ dependencyResolutionManagement {
 }
 
 dependencies {
-  implementation("com.github.xDrygo:xMusic:0.0.11")
+  implementation("com.github.xDrygo:xMusic:0.0.13")
 }
 ```
 
